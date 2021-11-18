@@ -24,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), Info.class);
                 intent.putExtra("etUserName", etUserName.getText().toString());
                 intent.putExtra("etPassword", etPassword.getText().toString());
-                Log.d("DataSaved", "UserName: " + etUserName.getText().toString());
-                Log.d("DataSaved", "Password: " + etPassword.getText().toString());
+                Log.d("InfoActivity", "Activity Started");
                 startActivity(intent);
             }
         });
