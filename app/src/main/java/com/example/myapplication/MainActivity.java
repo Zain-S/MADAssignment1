@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("Tag", "onCreate()");
         setContentView(R.layout.activity_main);
         Button button = findViewById(R.id.BT_Submit);
         EditText etUserName = findViewById(R.id.ET_Username);
@@ -28,5 +29,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("Tag", "onStart()");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("Tag", "onPause()");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("Tag", "onDestroy()");
     }
 }
