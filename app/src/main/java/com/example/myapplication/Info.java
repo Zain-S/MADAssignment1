@@ -14,7 +14,7 @@ public class Info extends AppCompatActivity {
         TextView name = findViewById(R.id.textView);
         TextView password = findViewById(R.id.textView3);
         Bundle extras = getIntent().getExtras();
-        name.setText("UserName: " + extras.getString("etUserName"));
-        password.setText("Password: " + extras.getString("etPassword"));
+        name.setText(extras.getString("etUserName"));
+        password.setText(extras.getString("etPassword"));
     }
 }
